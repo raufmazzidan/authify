@@ -31,7 +31,7 @@
         </div>
         <div class="flex items-center gap-4">
             <span>{!! captcha_img() !!}</span>
-            <button id="login" class="w-10 h-10 bg-purple text-white uppercase text-xl rounded">
+            <button class="w-10 h-10 bg-purple text-white uppercase text-xl rounded">
                 &#x21bb;
             </button>
         </div>
