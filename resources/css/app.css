@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color: rgb(46, 67, 77);
+  font-family: "Open Sans";
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-container>label {
+  /* color: theme('color.grey'); */
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid theme('colors.grey');
+  padding: 12px 16px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  border: 1px solid theme('colors.purple');
+}
+
+input::placeholder {
+  opacity: 1;
+  color: theme('colors.grey');
+}
+
+.input-error {
+  border: 1px solid theme('colors.red');
+}
+
+.label-error {
+  color: theme('colors.red');
+}
+
+button:disabled {
+  background: theme('colors.grey');
+}
